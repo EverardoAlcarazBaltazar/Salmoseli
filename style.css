@@ -1,0 +1,60 @@
+
+
+
+/* Personalización del título */
+.custom-title {
+font-family: 'Arial', sans-serif; /* Cambia la fuente del título */
+font-size: 3.5rem; /* Tamaño de fuente más grande */
+font-weight: bold; /* Hace que el texto sea más grueso */
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto */
+}
+
+/* Personalización del texto de la descripción */
+.custom-lead {
+font-family: 'Georgia', serif; /* Cambia la fuente del párrafo */
+font-size: 1.25rem; /* Tamaño de fuente moderado */
+font-style: italic; /* Hace el texto en cursiva */
+text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Agrega sombra suave al texto */
+}
+
+/* Estilo para el botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.whatsapp-float img {
+    width: 60px;
+    height: 60px;
+}
+.custom-border {
+border: 5px solid rgb(185, 68, 68); /* Cambia el grosor (8px) y el color (red) del borde */
+border-radius: 10px; /* Esquinas redondeadas, ajusta según desees */
+}
+
+.card-img-container {
+width: 100%;  /* El contenedor ocupa el 80% del ancho del card */
+margin: 0 auto;  /* Centra el contenedor dentro del card */
+height: 350px;  /* Establece una altura fija para las imágenes */
+overflow: hidden;  /* Recorta la imagen si es más grande que el contenedor */
+display: flex;  /* Usa flexbox para centrar la imagen */
+justify-content: center;  /* Centra la imagen horizontalmente */
+align-items: center;  /* Centra la imagen verticalmente */
+}
+
+.card-img-top {
+width: 260px;  /* Asegura que la imagen ocupe todo el ancho del contenedor */
+height: 300px; /* Asegura que la imagen ocupe toda la altura del contenedor */
+object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor sin distorsionarla */
+object-position: center; /* Centra la imagen dentro del recuadro */
+}
+.img-fluid {
+max-width: 100%;
+height: 100%;
+}
+.card {
+min-height: 160px; /* Ajusta la altura según el contenido */
+}
+
+    
