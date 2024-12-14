@@ -75,6 +75,55 @@
     /* Agrega sombra suave al texto */
 }
 
+/* Aumentar el tamaño y cambiar el color de las flechas */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Fondo semitransparente negro */
+    border-radius: 50%;
+    /* Hace que la flecha tenga forma de círculo */
+    width: 50px;
+    /* Ancho de la flecha */
+    height: 50px;
+    /* Alto de la flecha */
+    background-size: 60%;
+    /* Ajustar el tamaño del ícono dentro del círculo */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Cambio de color al pasar el mouse */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    /* Aumenta el ancho de la zona de clic */
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    color: white;
+    /* Cambia el color del ícono */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: drop-shadow(2px 2px 5px #000);
+    /* Agrega sombra a las flechas */
+}
+
+@media (max-width: 992px) {
+    .carousel-control-prev-icon {
+        height: 27px;
+
+    }
+
+    .carousel-control-next-icon {
+        height: 27px;
+    }
+}
 
 /* Estilo para el botón flotante de WhatsApp */
 .whatsapp-float {
