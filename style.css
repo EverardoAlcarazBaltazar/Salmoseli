@@ -168,34 +168,6 @@
     }
 }
 
-.card-img-container {
-    width: 100%;
-    /* El contenedor ocupa el 80% del ancho del card */
-    margin: 0 auto;
-    /* Centra el contenedor dentro del card */
-    height: 350px;
-    /* Establece una altura fija para las imágenes */
-    overflow: hidden;
-    /* Recorta la imagen si es más grande que el contenedor */
-    display: flex;
-    /* Usa flexbox para centrar la imagen */
-    justify-content: center;
-    /* Centra la imagen horizontalmente */
-    align-items: center;
-    /* Centra la imagen verticalmente */
-}
-
-.card-img-top {
-    width: 260px;
-    /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    height: 300px;
-    /* Asegura que la imagen ocupe toda la altura del contenedor */
-    object-fit: cover;
-    /* Ajusta la imagen para cubrir todo el contenedor sin distorsionarla */
-    object-position: center;
-    /* Centra la imagen dentro del recuadro */
-}
-
 .img-fluid {
     max-width: 100%;
     height: 100%;
