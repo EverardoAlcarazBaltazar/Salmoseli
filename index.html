@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sal Moseli</title>
+    <title>Sal Moseli - Sal de Mar Artesanal y Natural</title>
+    <link rel="shortcut icon" href="imagenes/logo.ico" />
+    <!-- Meta Description for SEO -->
+    <meta name="description"
+        content="Descubre la mejor sal de mar artesanal y 100% natural con Sal Moseli. Productos de alta calidad, galería de imágenes y contacto fácil.">
+    <meta name="keywords" content="Sal de mar, Sal artesanal, Sal natural, Productos de sal, Sal de alta calidad">
+    <meta name="author" content="Sal Moseli">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-  
+
 </head>
+
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg bg-light-navbar">
         <div class="container">
             <a class="navbar-brand" href="index">
-                <img src="imagenes\logo.png" alt="Sal Real" class="d-inline-block align-text-top" height="135">
-              </a>                
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="imagenes/logo.png" alt="Sal Real" class="d-inline-block align-text-top" height="135">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Productos</a>
+                        <a class="nav-link custom-nav-link" href="#gallery">Galería</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#gallery">Galería</a>
+                        <a class="nav-link custom-nav-link" href="#about">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacto</a>
+                        <a class="nav-link custom-nav-link" href="#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -44,7 +50,7 @@
         <div class="container">
             <h1 class="display-4 custom-title">Bienvenido a Sal Moseli</h1>
             <p class="lead custom-lead">Salud y bienestar a través de la sal pura y natural</p>
-            
+
             <!-- Enlaces a redes sociales con iconos -->
             <div class="social-icons">
                 <a href="https://www.instagram.com/salmoseli/" target="_blank" class="text-white mx-3">
@@ -56,23 +62,25 @@
                 <a href="https://wa.me/523122983655" target="_blank" class="text-white mx-3">
                     <i class="fab fa-whatsapp fa-2x"></i>
                 </a>
+                <a href="https://www.tiktok.com/@sal.moseli" target="_blank" class="text-white mx-3">
+                    <i class="fab fa-tiktok fa-2x"></i>
+                </a>
             </div>
         </div>
     </header>
-    
 
     <!-- Carrusel Section -->
-    <div class="container-md mt-5 position-relative carousel-container">
-        <div id="imageCarousel" class="carousel slide carousel-fade custom-border" data-bs-ride="carousel" data-bs-interval="2500">
+    <div class="position-relative carousel-container">
+        <div id="imageCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="imagenes/portada01.png" class="d-block w-100 object-fit-cover" style="height: 680px;" alt="Imagen 1">
+                    <img src="imagenes/portada01.png" class="d-block w-100 object-fit-cover" alt="Imagen 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagenes/portada02.jpg" class="d-block w-100 object-fit-cover" style="height: 680px;" alt="Imagen 2">
+                    <img src="imagenes/portada02.jpg" class="d-block w-100 object-fit-cover" alt="Imagen 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="imagenes/portada03.jpg" class="d-block w-100 object-fit-cover" style="height: 680px;" alt="Imagen 3">
+                    <img src="imagenes/portada03.jpg" class="d-block w-100 object-fit-cover" alt="Imagen 3">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
@@ -85,49 +93,6 @@
             </button>
         </div>
     </div>
-    
-    
-    <!-- Services Section -->
-    <section id="services" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Nuestros Productos</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-img-container">
-                            <img src="imagenes\producto01.png" class="card-img-top" alt="Producto 1">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Sal de mar artesanal</h5>
-                            <p class="card-text">1 KG.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-img-container">
-                            <img src="imagenes\producto02.png" class="card-img-top" alt="Producto 2">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Sal de mar 100% natural</h5>
-                            <p class="card-text">1 KG.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-img-container">
-                            <img src="imagenes\producto05.png" class="card-img-top" alt="Producto 3">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Sal de mar 100% natural</h5>
-                            <p class="card-text">2 KG</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Gallery Section -->
     <section id="gallery" class="py-5 bg-light">
@@ -151,70 +116,87 @@
     <section id="about" class="py-5">
         <div class="container">
             <h2 class="text-center mb-5 fw-bold">Sobre Nosotros</h2>
-            <p class="text-center fs-5" style="margin-bottom: 6rem;">En Sal Moseli, nos enorgullece ser una empresa productora y comercializadora de sal de mar en grano, 100% mexicana, con una fuerte raíz en la tradición y la calidad. Desde nuestros inicios, nos hemos dedicado a la elaboración de la mejor sal de mar, destacándonos por nuestro proceso único, artesanal y natural que preserva la pureza y el sabor genuino de cada grano de sal.
-                Nuestro compromiso con la calidad, la sustentabilidad y la mejora continua nos ha llevado a convertirnos en un referente en el sector. <b>Producimos sal de la más alta calidad</b> , cumpliendo con los estándares de inocuidad alimentaria y obteniendo certificaciones que garantizan la seguridad y confianza en cada uno de nuestros productos.</p>
+            <p class="text-center fs-5" style="margin-bottom: 1rem;">En Sal Moseli, nos enorgullece ser una empresa
+                productora y comercializadora de sal de mar en grano, 100% mexicana, con una fuerte raíz en la tradición
+                y la calidad. Desde nuestros inicios, nos hemos dedicado a la elaboración de la mejor sal de mar,
+                destacándonos por nuestro proceso único, artesanal y natural que preserva la pureza y el sabor genuino
+                de cada grano de sal.
+                Nuestro compromiso con la calidad, la sustentabilidad y la mejora continua nos ha llevado a convertirnos
+                en un referente en el sector. <b>Producimos sal de la más alta calidad</b> , cumpliendo con los
+                estándares de inocuidad alimentaria y obteniendo certificaciones que garantizan la seguridad y confianza
+                en cada uno de nuestros productos.</p>
             <div class="row mt-4">
                 <div class="col-md-6">
                     <img src="imagenes/historia.jpg" class="img-fluid" alt="Nuestra Historia">
                 </div>
-                <div class="col-md-6 ">
+                <div class="col-md-6">
                     <h4 class="fw-bold">Nuestra Historia</h4>
-                    <p class="fs-5">Nuestra historia comienza con la visión de crear una <b>empresa dedicada a la producción artesanal de sal de mar, respetando las tradiciones ancestrales pero con una perspectiva moderna de mejora continua y calidad</b>. Con el paso de los años, nos convertimos en pioneros en la producción de sal de mar natural, libre de químicos, que conserva todas sus propiedades esenciales.
-                        Desde el inicio, la misión fue clara: ser la empresa líder en el sector de producción, almacenamiento y distribución de sal artesanal de excelente calidad e inocuidad alimentaria, mejorando constantemente nuestros procesos. A lo largo de los años, nos hemos esforzado por adaptarnos a un entorno dinámico y competitivo, siempre buscando superar las expectativas de nuestros clientes. </p>
+                    <p class="fs-5">Nuestra historia comienza con la visión de crear una <b>empresa dedicada a la
+                            producción artesanal de sal de mar, respetando las tradiciones ancestrales pero con una
+                            perspectiva moderna de mejora continua y calidad</b>. Con el paso de los años, nos
+                        convertimos en pioneros en la producción de sal de mar natural, libre de químicos, que conserva
+                        todas sus propiedades esenciales.
+                        Desde el inicio, la misión fue clara: ser la empresa líder en el sector de producción,
+                        almacenamiento y distribución de sal artesanal de excelente calidad e inocuidad alimentaria,
+                        mejorando constantemente nuestros procesos. A lo largo de los años, nos hemos esforzado por
+                        adaptarnos a un entorno dinámico y competitivo, siempre buscando superar las expectativas de
+                        nuestros clientes. </p>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Contact Section -->
-<section id="contact" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-4">Contáctanos</h2>
-        <div class="row">
-            <!-- Teléfono -->
-            <div class="col-md-3">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <i class="fas fa-phone fa-2x mb-3 text-danger"></i> <!-- Ícono de Teléfono en rojo -->
-                        <h5 class="card-title">Teléfono</h5>
-                        <p class="card-text">+52 312 298 3655</p>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <div class="row">
+                <!-- Teléfono -->
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-phone fa-2x mb-3 text-danger"></i> <!-- Ícono de Teléfono en rojo -->
+                            <h5 class="card-title">Teléfono</h5>
+                            <p class="card-text">+52 312 298 3655</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- WhatsApp -->
-            <div class="col-md-3">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <i class="fab fa-whatsapp fa-2x mb-3 text-danger"></i> <!-- Ícono de WhatsApp en rojo -->
-                        <h5 class="card-title">WhatsApp</h5>
-                        <p class="card-text">+52 312 298 3655</p>
+                <!-- WhatsApp -->
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fab fa-whatsapp fa-2x mb-3 text-danger"></i> <!-- Ícono de WhatsApp en rojo -->
+                            <h5 class="card-title">WhatsApp</h5>
+                            <p class="card-text">+52 312 298 3655</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Correo -->
-            <div class="col-md-3">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <i class="fas fa-envelope fa-2x mb-3 text-danger"></i> <!-- Ícono de Correo en rojo -->
-                        <h5 class="card-title">Correo</h5>
-                        <p class="card-text">salmoseli01@gmail.com </p>
+                <!-- Correo -->
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-envelope fa-2x mb-3 text-danger"></i> <!-- Ícono de Correo en rojo -->
+                            <h5 class="card-title">Correo</h5>
+                            <p class="card-text">salmoseli01@gmail.com </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Dirección -->
-            <div class="col-md-3">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <i class="fas fa-map-marker-alt fa-2x mb-3 text-danger"></i> <!-- Ícono de Dirección en rojo -->
-                        <h5 class="card-title">Dirección</h5>
-                        <p class="card-text">Prolongación Carlos de la Madrid Bejar #1601 colonia juana de Adbaje</p>
+                <!-- Dirección -->
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-map-marker-alt fa-2x mb-3 text-danger"></i>
+                            <!-- Ícono de Dirección en rojo -->
+                            <h5 class="card-title">Dirección</h5>
+                            <p class="card-text">Prolongación Carlos de la Madrid Bejar #1601 colonia juana de Adbaje
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-    
+    </section>
+
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Sal Moseli. Todos los derechos reservados.</p>
@@ -230,4 +212,5 @@
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

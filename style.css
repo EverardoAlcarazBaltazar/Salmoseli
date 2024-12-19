@@ -1,20 +1,128 @@
+/* Personalización del estilo de la navbar */
+.navbar {
+    padding: 1rem;
+    /* Aumentar el espacio dentro de la barra */
+}
+
+.navbar-nav {
+    background-color: #ffffff91;
+}
+
+/* Estilo personalizado para los enlaces del menú */
+.custom-nav-link {
+    font-weight: bold;
+    /* Hace que el texto sea más grueso */
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+}
 
 
+/* Asegúrate de que los elementos no estén demasiado juntos */
+.navbar-nav .nav-item {
+    margin-right: 10px;
+    /* Espaciado entre los elementos */
+}
+
+/* Aumentar el tamaño de la barra de navegación en dispositivos grandes */
+@media (min-width: 992px) {
+    .navbar-nav .nav-link {
+        font-size: 1.2rem;
+        /* Aumentar aún más el tamaño en pantallas grandes */
+    }
+}
+
+.bg-light-navbar {
+    background-image: url(imagenes/background_img.png);
+    background-color: rgba(217, 213, 213, 0) !important
+}
+
+.container {
+    max-width: 90%;
+}
+
+.navbar-toggler-icon {
+    width: 2.5rem;
+    height: 2.5em;
+}
+
+.navbar-toggler {
+    background-color: rgba(0, 0, 0, 0.322);
+    border: 3px solid rgb(0, 0, 0);
+    /* Aquí puedes aumentar el grosor */
+}
 
 /* Personalización del título */
 .custom-title {
-font-family: 'Arial', sans-serif; /* Cambia la fuente del título */
-font-size: 3.5rem; /* Tamaño de fuente más grande */
-font-weight: bold; /* Hace que el texto sea más grueso */
-text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Agrega sombra al texto */
+    font-family: 'Arial', sans-serif;
+    /* Cambia la fuente del título */
+    font-size: 3.5rem;
+    /* Tamaño de fuente más grande */
+    font-weight: bold;
+    /* Hace que el texto sea más grueso */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    /* Agrega sombra al texto */
 }
 
 /* Personalización del texto de la descripción */
 .custom-lead {
-font-family: 'Georgia', serif; /* Cambia la fuente del párrafo */
-font-size: 1.25rem; /* Tamaño de fuente moderado */
-font-style: italic; /* Hace el texto en cursiva */
-text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Agrega sombra suave al texto */
+    font-family: 'Georgia', serif;
+    /* Cambia la fuente del párrafo */
+    font-size: 1.25rem;
+    /* Tamaño de fuente moderado */
+    font-style: italic;
+    /* Hace el texto en cursiva */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    /* Agrega sombra suave al texto */
+}
+
+/* Aumentar el tamaño y cambiar el color de las flechas */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Fondo semitransparente negro */
+    border-radius: 50%;
+    /* Hace que la flecha tenga forma de círculo */
+    width: 50px;
+    /* Ancho de la flecha */
+    height: 50px;
+    /* Alto de la flecha */
+    background-size: 60%;
+    /* Ajustar el tamaño del ícono dentro del círculo */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Cambio de color al pasar el mouse */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    /* Aumenta el ancho de la zona de clic */
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    color: white;
+    /* Cambia el color del ícono */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: drop-shadow(2px 2px 5px #000);
+    /* Agrega sombra a las flechas */
+}
+
+@media (max-width: 992px) {
+    .carousel-control-prev-icon {
+        height: 27px;
+
+    }
+
+    .carousel-control-next-icon {
+        height: 27px;
+    }
 }
 
 /* Estilo para el botón flotante de WhatsApp */
@@ -24,37 +132,48 @@ text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Agrega sombra suave al texto */
     right: 20px;
     z-index: 1000;
 }
+
 .whatsapp-float img {
     width: 60px;
     height: 60px;
 }
-.custom-border {
-border: 5px solid rgb(185, 68, 68); /* Cambia el grosor (8px) y el color (red) del borde */
-border-radius: 10px; /* Esquinas redondeadas, ajusta según desees */
+
+.col-md-6 {
+    padding-top: 25px;
 }
 
-.card-img-container {
-width: 100%;  /* El contenedor ocupa el 80% del ancho del card */
-margin: 0 auto;  /* Centra el contenedor dentro del card */
-height: 350px;  /* Establece una altura fija para las imágenes */
-overflow: hidden;  /* Recorta la imagen si es más grande que el contenedor */
-display: flex;  /* Usa flexbox para centrar la imagen */
-justify-content: center;  /* Centra la imagen horizontalmente */
-align-items: center;  /* Centra la imagen verticalmente */
+/* Carrusel general */
+.carousel-inner {
+    overflow: hidden;
 }
 
-.card-img-top {
-width: 260px;  /* Asegura que la imagen ocupe todo el ancho del contenedor */
-height: 300px; /* Asegura que la imagen ocupe toda la altura del contenedor */
-object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor sin distorsionarla */
-object-position: center; /* Centra la imagen dentro del recuadro */
+.carousel-item img {
+    width: 100%;
+    object-fit: cover;
 }
+
+/* Para pantallas grandes (mayores a 768px) */
+@media (min-width: 768px) {
+    .carousel-item img {
+        height: 700px;
+        /* Altura mayor para pantallas grandes */
+    }
+}
+
+/* Para pantallas móviles (menos de 768px) */
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 190px;
+        /* Altura más pequeña para móviles */
+    }
+}
+
 .img-fluid {
-max-width: 100%;
-height: 100%;
-}
-.card {
-min-height: 160px; /* Ajusta la altura según el contenido */
+    max-width: 100%;
+    height: 100%;
 }
 
-    
+.card {
+    min-height: 160px;
+    /* Ajusta la altura según el contenido */
+}
